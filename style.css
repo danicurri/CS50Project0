@@ -1,0 +1,29 @@
+h1 {
+  font: sans-serif;
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+img {
+  height: 500px;
+  width: 1000px;
+  padding: 50px;
+}
+
+a {
+  padding: 50px;
+  font-size: 20px;
+}
+
+div {
+  padding: 20px;
+} 
+
+#moros {
+  padding-left: 200px;
+}
