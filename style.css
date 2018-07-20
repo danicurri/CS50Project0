@@ -22,7 +22,11 @@ a {
 
 div {
   padding: 20px;
-} 
+}
+
+#index {
+  padding: 30px;
+}
 
 #moros {
   padding-left: 200px;
