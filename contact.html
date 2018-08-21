@@ -7,12 +7,47 @@
     <body>
       <div>
         <h1>Please contact:<a href="http://www.jijonaturismo.com/" target="_blank">Xixona Tourism Office</a></h1>
-        </div>
+      </div>
+      <div class="container">
+        <form>
+
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+
+          <div>
+            <label for="country">Country</label>
+            <input id="country" name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+              <option value="Spain">
+              <option value="Canada">
+              <option value="USA">
+              <option value="Australia">
+              <option value="UK">
+            </datalist>
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." >
+            </textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Submit">
+          </div>
+
+        </form>
+      </div>
         <div>
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="terro.html">Terró</a>
-          </div>
+        </div>
     </body>
 </html>
