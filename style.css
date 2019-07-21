@@ -1,3 +1,8 @@
+body {
+  background-color: #f0eee9;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+}
 h1 {
   font: sans-serif;
   color: red;
@@ -5,7 +10,6 @@ h1 {
 }
 
 p {
-  font-size: 20px;
   text-align: center;
 }
 
@@ -22,6 +26,8 @@ a {
 
 div {
   padding: 20px;
+  border: 1px solid #e8ca80;
+  border-radius: 10px;
 }
 
 #index {
@@ -30,4 +36,18 @@ div {
 
 #moros {
   padding-left: 200px;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+}
+th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+th {
+  background-color: lightgray;
 }
