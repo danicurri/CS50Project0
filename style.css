@@ -6,25 +6,52 @@ body {
 
 h1 {
   font: sans-serif;
-  color: red;
+  color: #665f5e;
   text-align: center;
 }
-
+ /* para pantallas mayores de 500*/
+@media (min-width: 1000px){
+h1::after {
+  content: "(You are now watching my website in a large screen) ";
+  font-size: 12px;
+  }
+}
+ /* para pantallas menores de 499--no funciona!!*/
+@media (max-width: 999px){
+h1::after {
+  content: "(You are now watching my website in a small screen) ";
+  font-size: 12px;
+  }
+}
 
 h2 {
   font: sans-serif;
   text-align: center;
 }
 
+p { color: #685206; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 14px; 
+  line-height: 24px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-justify: inter-word;
+ }
+/*
+al seleccionar texto del parrafo se activa lo de abajo
+*/
 
-p {
-  text-align: center;
+p::selection{
+  color: #363231;
+  background-color: #c99087;
 }
 
 img {
-  height: 500px;
-  width: 1000px;
-  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 25px;
 }
 
 a {
@@ -38,15 +65,23 @@ div {
   border-radius: 10px;
 }
 
+table {
+  width: 50%;
+  margin: auto;
+}
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
-  width: 50%;
-  text-align: center;
+  text-align: center;  
 }
 th, td {
   border: 1px solid black;
   padding: 15px;
+  display: grid;
+  grid-template-columns: auto; 
+  /*
+  para que la columna de la tabla se ajuste al ancho de pantalla
+  */
 }
 th {
   background-color: lightgray;
@@ -69,4 +104,38 @@ input[list] {
 
 #moros {
   padding-left: 200px;
+}
+
+/*
+boton normal
+*/
+
+#regularbutton{
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+
+#regularbutton:hover {
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: #fcba03;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
+
+/*
+enlaces del turron
+*/
+
+.terrohart::before {
+   content: "♥";
 }
